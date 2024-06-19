@@ -9,9 +9,13 @@
         gtag('js', new Date());
 
         gtag('config', 'G-TH5FZNVCKX');
+        
+        function recordBooked() {
+            gtag('event', 'booked');
+        }
         </script>
     </head>
     <body>
-        <button>Testing</button>
+        <button onclick="recordBooked()">Testing</button>
     </body>
 </html>
